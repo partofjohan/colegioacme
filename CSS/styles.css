@@ -11,26 +11,69 @@ header{
 /*pseudo-clase para justificar horizontalmente los elementos del header*/
 header::after {
     content: '';
-    display: inline-block;
+    display: inline-flex;
     width: 100%;
 }
 
 /*pseudo-clase para justificar verticalmente los elementos del header*/
-header div::before {
+header>div::before {
     content: '';
-    display: inline-block;
+    display: flexbox; /*aquí antes iba display: inline-block;*/
     vertical-align: middle;  
     height: 100%;
 }
-header div{
+header>div{
     display: inline-block;
     font-size: 23px;
     height: 100%;   /*ayuda a justificar verticalmente los elementos del header*/
     vertical-align: middle;
+    
+}
+/*#colegio{
+    display: inline-block;
+    /*height: 100%;
+    vertical-align: middle;*/
+    /*background-color: #ff6666;
+}
+#acme{
+    background-color: #ff6666;
+    
+    /*display: block;*/
+/*}*/
+div>div{
+    background-color: #ff6666;
+    
+}
+
+
+header nav, ul, li {
+    /*background-color: #ff6666;*/
+    display: inline-block;  
+    font-size: 24px;
+    vertical-align: middle; 
+}
+header ul li a{
+    padding: 14px 16px; /*separación elementos del menú*/
+}
+header li{
+    cursor:pointer;
 }
 header nav {
-    background-color: #ff6666; 
-    display: inline-block;  
-    font-size: 19px;
-    vertical-align: middle; 
+    font-size: 23px;
+    /*color:#fff;*/
+    /*border-radius: 1em 1em 1em 1em;*/
+    border-radius: 15px;
+    border: 2px solid  #000;
+    cursor:pointer;
+}
+header nav a{
+    padding: 6px; /*space between the border and the content*/
+}
+header ul li a:hover{
+    background-color: #69cc54;
+    /*color: #ebedeb;*/
+}
+header nav:hover{
+    background-color: #69cc54;
+    /*color: #ebedeb;*/
 }
