@@ -110,6 +110,7 @@ div>img{
     width: 50px;
     text-align: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 .left-arrow{
     float: left;
@@ -118,3 +119,23 @@ div>img{
     float: right;
 }
 /*tal vez sea necesario padding con los caracteres*/
+.circle-slider{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-size: 18px;
+    bottom: 0%;
+    /*margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 0.01em 16px;*/
+}
+.circle{
+    border:3px solid #83eb6c;
+    background-color: #1a1a1a;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    /*font-size: 18px;*/
+    display: inline-block;
+    cursor: pointer;
+}
