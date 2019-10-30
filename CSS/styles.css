@@ -53,13 +53,68 @@ header>ul{
 }
 .w3-content{
     max-width: none;
+    height: 300px;
 }
-.w3-display-container{
-    display: flex;
-}
+
 div>img{
     width: 100%;
     height: 100%;
 }
 
-.w3-badge {height:20px;width:20px;padding:0}
+.w3-badge {
+    height:20px;width:20px;padding:0;
+    cursor: pointer;
+    /*color: #83eb6c;
+    background-color: #83eb6c;*/
+}
+.w3-black,.w3-hover-black:hover{
+    /*el color del relleno*/
+    /*color:#83eb6c!important;*/
+    background-color:#1a1a1a!important;
+}
+.w3-border{
+    /*se puede cambiar el borde del círculo*/
+    border:3px solid #83eb6c!important;
+    /*border-color: #83eb6c!important;*/
+}
+
+/*a los span que generan espacios toca ponerles cursor none*/
+
+.w3-display-bottommiddle{
+    bottom:50%;
+}
+
+.slider{
+    width: 100%;
+    height: 300px;
+    background-color: #83eb6c;
+    position: relative;/*¿es necesario?*/
+}
+.slider>img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;/*¿es necesario?*/
+}
+
+.arrow-slider{
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 25px;
+}
+.arrow{
+    border: 3px solid #000;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+.left-arrow{
+    float: left;
+}
+.rigth-arrow{
+    float: right;
+}
+/*tal vez sea necesario padding con los caracteres*/
