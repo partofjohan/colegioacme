@@ -83,7 +83,8 @@ div>img{
     border: 3px solid #1a1a1a;
     height: 40px;
     width: 40px;
-    line-height: 40px; /*alinea la fecha verticalmente*/
+    line-height: 38px; /*alinea la fecha verticalmente*/
+    
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
@@ -128,7 +129,7 @@ div>img{
 .extra{
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 50p;
+    margin-bottom: 50px;
 }
 .extra>h1{
     width: 100%;
@@ -156,4 +157,52 @@ div>img{
 .panel-hr{
     margin-left: 5%;
     margin-right: 5%;
+}
+footer{
+    display: flexbox;
+    background-color: #83eb6c;
+    border-top: 1px solid #1a1a1a;
+}
+.footer-info{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.footer-block{
+    width: 100%;
+}
+.footer-rights{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.footer-top{
+    justify-content: space-between;
+    display: flex;
+    /*margin-top: 200px;*/
+    padding-top: 20px;
+    
+}
+
+.img-icon{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    border-radius: 50%;
+    border: 5px solid #83eb6c;
+}
+.img-icon:hover{
+    border: 5px solid #37ad57;
+}
+.follow{
+    font-size: 25px;
+}
+.follow-text{
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
