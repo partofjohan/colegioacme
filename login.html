@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <title>Colegio ACME</title>
-        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="CSS/login.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <meta charset="utf-8">
     </head>
@@ -13,7 +13,7 @@
                 <div>ACME</div>
             </div>
             <ul>
-                <li><a>INICIO</a></li>
+                <li><a class="link" href="index.html">INICIO</a></li>
                 <li><a>QUIÉNES SOMOS</a></li>
                 <li><a>ADMISIONES</a></li>
                 <li><a>CONTACTO</a></li>
@@ -36,30 +36,33 @@
 
         <section class="login-panel">
             <div>
-                <div>Correo</div>
-                <input class="input-mail" type="text">
+                <div class="panel-text">Correo</div>
+                <input id="mail" class="" type="text">
                 <div>
                     <img class="icon-panel" src="images/icons/mail.png">
                 </div>
                 
             </div>
             <div>
-                <div>Contraseña</div>
-                <input class="input-pass" type="password">
+                <div class="panel-text">Contraseña</div>
+                <input id="pass" class="" type="password">
                 <div>
                     <img class="icon-panel" src="images/icons/lock.png">
                 </div>
                 
             </div>
-            <div>Ingresar</div>
+            <div class="btn-login">Ingresar</div>
         </section>
 
         <footer>
             <div class="footer-top">
-                <div class="footer-info">
-                    <div>Colegio</div>
-                    <div>ACME</div>
-                </div>
+                <a href="index.html" class="link">
+                    <div class="footer-info">
+                        <div>Colegio</div>
+                        <div>ACME</div>
+                    </div>
+                </a>
+                
                     
                 <div class="footer-info follow">
                     <div class="follow-text">Síguenos en</div>
