@@ -242,6 +242,8 @@ footer{
     height: 1em;
     width: 1em;
     position: absolute;
+    top: 1.5em;
+    margin-left: 5px;
 }
 div>input{
     height: 30px;
