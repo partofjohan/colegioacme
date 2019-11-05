@@ -89,8 +89,13 @@ section>div{
 
 /*Estilos donde se despliegan los datos*/
 /*Información de estudiante*/
+.panel-section{
+    margin-bottom: 80px;
+}
 .student-section{
     display: flex;
+    width: 800px;
+    margin: 0 auto;
     margin-top: 20px;
 }
 .student-section>div{
@@ -141,7 +146,9 @@ section>div{
 
 /*Información de asignaturas*/
 .subject-section{
-    margin-top: 20px;
+    width: 830px;
+    margin: 0 auto;
+    margin-top:20px;
 }
 .subject-panel>div{
     display: inline-block;
@@ -202,9 +209,11 @@ section>div{
 }
 /*Sección de calificaciones*/
 .grades-section{
-    width: 90%;
-    margin:0 auto;
+    width: 820px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
+
 
 .grade-panel{
     border-width: 0px 1px 1px 0px;
