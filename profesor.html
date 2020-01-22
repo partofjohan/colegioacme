@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Profesor | Colegio ACME</title>
+        <link rel="stylesheet" type="text/css" href="CSS/profesor.css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <!--<script src="JS/estudiante.js"></script>-->
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <div >
+                <div>Colegio</div>
+                <div>ACME</div>
+            </div>
+            <ul>
+                <li><a class="link" href="index.html">INICIO</a></li>
+                <li><a>QUIÉNES SOMOS</a></li>
+                <li><a>ADMISIONES</a></li>
+                <li><a>CONTACTO</a></li>
+            </ul>
+            <nav>
+                <a href="login.html" >Cerrar Sesión</a>
+            </nav>
+        </header>
+        
+        <div class="btn-back" onclick="goBack()">
+            Atrás
+        </div>
+
+        <section>
+            <div class="student panel-section">
+                <div class="title-section"><h2>Información del Docente</h2></div>
+                <hr>
+                <div class="teacher-section">
+                    <div class="teacher-info">
+                        <div class="teacher-panel">
+                            <div class="teacher-label teacher-label-initial">Nombre</div>
+                            <div class="teacher-data teacher-data-initial">Docente Uno</div>
+                        </div>
+                        <div class="teacher-panel">
+                            <div class="teacher-label">Tipo de Identificación</div>
+                            <div class="teacher-data">Cédula de Ciudadanía</div>
+                        </div>
+                        <div class="teacher-panel">
+                            <div class="teacher-label">Número de Documento</div>
+                            <div class="teacher-data">1061788562</div>
+                        </div>
+                    </div>
+                    <div class="img-section">
+                        <img class="img-teacher" src="images/profesor.jpg">
+                        <div class="role">Docente</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="subjects panel-section">
+                <div class="title-section"><h2>Mis Asignaturas</h2></div>
+                <hr>
+                <div class="subject-section">
+                    <div class="subject-panel">
+                        <div class="subject-panel-title title-subject">Asignatura</div>
+                        <div class="subject-panel-title title-teacher">Docente</div>
+                        <div class="subject-panel-title title-schedule">Horario</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label subject-label-initial">MATEMÁTICAS</div>
+                        <div class="subject-data subject-data-initial">Ángela Caicedo</div>
+                        <div class="subject-schedule subject-schedule-initial">Lunes 7:00 a.m. - 9:00 a.m. </div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">FÍSICA</div>
+                        <div class="subject-data">Luis Londoño</div>
+                        <div class="subject-schedule">Lunes 9:00 a.m. - 11:00 a.m. </div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">QUÍMICA</div>
+                        <div class="subject-data">Alberto García</div>
+                        <div class="subject-schedule">Lunes 11:00 a.m. - 1:00 p.m. </div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">CIENCIAS SOCIALES</div>
+                        <div class="subject-data">Pedro Molano</div>
+                        <div class="subject-schedule">Martes 7:00 a.m. - 9:00 a.m. </div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">ARTÍSTICA</div>
+                        <div class="subject-data">Eric Sánchez</div>
+                        <div class="subject-schedule">Martes 9:00 a.m. - 11:00 a.m. </div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">EDUCACIÓN FÍSICA</div>
+                        <div class="subject-data">Silvio Muñoz</div>
+                        <div class="subject-schedule">Martes 11:00 a.m. - 1:00 p.m. </div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">INGLÉS</div>
+                        <div class="subject-data">Cecilia Bonilla</div>
+                        <div class="subject-schedule">Miércoles 7:00 a.m. - 9:00 a.m. </div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">INFORMÁTICA</div>
+                        <div class="subject-data">Carlos Álvarez</div>
+                        <div class="subject-schedule">Miércoles 9:00 a.m. - 11:00 a.m. </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="grades panel-section">
+                <div class="title-section"><h2>Mis Notas</h2></div>
+                <hr>
+                <div class="grades-section">
+                    <div class="subject-panel">
+                        <div class="subject-panel-title title-subject">Asignatura</div>
+                        <div class="subject-panel-title grade-period">Periodo I</div>
+                        <div class="subject-panel-title grade-period">Periodo II</div>
+                        <div class="subject-panel-title grade-period">Periodo III</div>
+                        <div class="subject-panel-title grade-period latest-panel">Periodo IV</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label subject-label-initial">MATEMÁTICAS</div>
+                        <div class="grade-panel grade-panel-initial">3.2</div>
+                        <div class="grade-panel grade-panel-initial">3.2</div>
+                        <div class="grade-panel grade-panel-initial">3.2</div>
+                        <div class="grade-panel grade-panel-initial latest-panel">3.2</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">FÍSICA</div>
+                        <div class="grade-panel">4.6</div>
+                        <div class="grade-panel">4.6</div>
+                        <div class="grade-panel">4.6</div>
+                        <div class="grade-panel latest-panel">4.6</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">QUÍMICA</div>
+                        <div class="grade-panel">5.0</div>
+                        <div class="grade-panel">5.0</div>
+                        <div class="grade-panel">5.0</div>
+                        <div class="grade-panel latest-panel">5.0</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">CIENCIAS SOCIALES</div>
+                        <div class="grade-panel">3.9</div>
+                        <div class="grade-panel">3.9</div>
+                        <div class="grade-panel">3.9</div>
+                        <div class="grade-panel latest-panel">3.9</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">ARTÍSTICA</div>
+                        <div class="grade-panel">4.7</div>
+                        <div class="grade-panel">4.7</div>
+                        <div class="grade-panel">4.7</div>
+                        <div class="grade-panel latest-panel">4.7</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">EDUCACIÓN FÍSICA</div>
+                        <div class="grade-panel">4.2</div>
+                        <div class="grade-panel">4.2</div>
+                        <div class="grade-panel">4.2</div>
+                        <div class="grade-panel latest-panel">4.2</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">INGLÉS</div>
+                        <div class="grade-panel">4.8</div>
+                        <div class="grade-panel">4.8</div>
+                        <div class="grade-panel">4.8</div>
+                        <div class="grade-panel latest-panel">4.8</div>
+                    </div>
+                    <div class="subject-panel">
+                        <div class="subject-label">INFORMÁTICA</div>
+                        <div class="grade-panel">5.0</div>
+                        <div class="grade-panel">5.0</div>
+                        <div class="grade-panel">5.0</div>
+                        <div class="grade-panel latest-panel">5.0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <a href="index.html" class="link">
+                    <div class="footer-info">
+                        <div>Colegio</div>
+                        <div>ACME</div>
+                    </div>
+                </a>
+                <div class="footer-info follow">                    
+                    <div class="follow-text">Síguenos en</div>
+                    <div>
+                        <img class="img-icon" src="images/icons/facebook.png">
+                        <img class="img-icon" src="images/icons/twitter.png">
+                        <img class="img-icon" src="images/icons/instagram.png">
+                        <img class="img-icon" src="images/icons/youtube.png">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <div>Copyright &copy; 2019</div>
+                <div>Colegio ACME. Todos los derechos reservados</div>
+            </div>
+        </footer>
+    </body>
+</html>

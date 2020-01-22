@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/*Estilos para el header*/
+header{
+    display: flex;
+    align-items: center;
+    background-color: #83eb6c;
+    
+    height: 100px;
+    justify-content: space-between;
+    border-bottom: 1px solid #1a1a1a;
+}
+header li,nav{
+    display: inline-block;
+    font-size: 24px;
+}
+header nav>a{
+    padding: 4px; /*espacio entre el contenido y el margen*/
+    text-decoration: none;
+    color: #000;
+}
+header nav:hover{
+    background-color: #37ad57;
+}
+header nav{
+    border: 3px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    right: 3%;
+}
+header>div{
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 3%;
+}
+header li>a{
+    padding: 14px 16px; /*separación elementos del menú*/
+    cursor: pointer;
+}
+header ul>li:hover{
+    display: flex;
+    background-color: #37ad57;
+    height: 75%;
+    align-items: center;
+    border-radius: 5px;
+}
+header>ul{
+    display: flex;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: #000;
+}
+
+/*Estilos botón atrás*/
+.btn-back{
+    height: 30px;
+    width: 100px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+    right: 3%;
+    font-size: 24px;
+    text-align: center;
+    background-color: #83eb6c;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.btn-back:hover{
+    background-color: #37ad57;
+}
+
+/*Estilos para los páneles de información, asignaturas y notas*/
+section>div{
+    margin-left: 10px;
+    margin-top:10px;
+}
+.title-section{
+    margin-left: 110px;
+}
+/*Estilos donde se despliegan los datos*/
+/*Información de docente*/
+.panel-section{
+    margin-bottom: 80px;
+}
+.teacher-section{
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.teacher-section>div{
+    display: inline-block;/*Al parecer no hay necesidad de esto*/
+    /*margin: auto;*/
+}
+.teacher-info{
+    margin: auto;
+}
+.teacher-panel>div{
+    display: inline-block;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+.teacher-label{
+    padding-left: 10px;
+    background-color: #e0e0e0;
+    width: 200px;
+    float: left;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+}
+.teacher-data{
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 400px;
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+}
+.teacher-label-initial{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+.teacher-data-initial{
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+}
+.img-section{
+    margin-left: 50px;
+    /*margin-top: 5%;*/
+}
+.img-teacher{
+    height: 150px;
+    width: 120px;
+    border: 3px solid #37ad57;
+    border-radius: 5px;
+}
+.role{
+    font-size: 20px;
+    text-align: center;
+}
