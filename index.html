@@ -4,36 +4,44 @@
         <title>Colegio ACME</title>
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        
     </head>
     <body>
         <header>
-            <div >
+            <div class="title">
                 <div>Colegio</div>
                 <div>ACME</div>
             </div>
+            <div id="menu" onclick="menu()">
+                <div class="menu_text">MENÚ</div>
+                <div class="icon"><i class="fa fa-bars"></i></div>
+            </div>
             <ul>
-                <li><a>INICIO</a></li>
-                <li><a>QUIÉNES SOMOS</a></li>
-                <li><a>ADMISIONES</a></li>
-                <li><a>CONTACTO</a></li>
+                <li class="menu-items"><a>INICIO</a></li>
+                <li class="menu-items"><a>QUIÉNES SOMOS</a></li>
+                <li class="menu-items"><a>ADMISIONES</a></li>
+                <li class="menu-items"><a>CONTACTO</a></li>
+                <li class="menu-items btn-res-log" ><a href="login.html">Ingresar</a></li>
             </ul>
             <nav>
                 <a href="login.html">Ingresar</a>
             </nav>
         </header>
-        <section class="slider">
-            <img src="images/IMG2.jpg">
+        <section  class="slider">
+            <img id="imagen" src="images/IMG1.jpg">
             <div class="arrow-slider">
-                <div class="arrow left-arrow"><div>&#10094;</div></div>
-                <div class="arrow rigth-arrow">&#10095;</div>
+                <div class="arrow left-arrow" onclick="left()"><div>&#10094;</div></div>
+                <div class="arrow rigth-arrow" onclick="rigth()">&#10095;</div>
             </div>
-            <div class="circle-slider">
-                <span class="circle circle-fill"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
+            <div id="elements" class="circle-slider">
+                <span id="circle1" class="circle circle-fill" onclick="rote(1)"></span>
+                <span id="circle2" class="circle" onclick="rote(2)"></span>
+                <span id="circle3" class="circle" onclick="rote(3)"></span>
+                <span id="circle4" class="circle" onclick="rote(4)"></span>
+                <span id="circle5" class="circle" onclick="rote(5)"></span>
             </div>
         </section>
         <div class="extra">
@@ -55,7 +63,7 @@
         </div>
         <footer>
             <div class="footer-top">
-                <div class="footer-info">
+                <div class="ftr-info footer-info">
                     <div>Colegio</div>
                     <div>ACME</div>
                 </div>
@@ -75,5 +83,6 @@
                 <div>Colegio ACME. Todos los derechos reservados</div>
             </div>
         </footer>
+        <script src="JS/index.js"></script>
     </body>
 </html>
